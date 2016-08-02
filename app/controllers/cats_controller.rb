@@ -8,5 +8,13 @@ class CatsController < ApplicationController
     render json: cat
   end
 
+  def new
+
+  end
+
+  def edit
+    @cat = Cat.find(params[:id])
+  end
+
 
 end

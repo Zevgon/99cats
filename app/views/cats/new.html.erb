@@ -1,0 +1,39 @@
+<form class="new_cat" action="/cats" method="post">
+  <!-- color. na,e. sex. description -->
+  <label> Name
+    <input type ="text" name = "cats[name]" placeholder="Kittys Name">
+  </label>
+
+
+
+  <label>Sex
+    <label>F
+      <input type="radio" name="cats[sex]" value="F">
+    </label>
+    <label>M
+    <input type="radio" name="cats[sex]" value="M">
+    </label>
+  </label>
+
+
+  <label> Birth Date
+    <input type="Date" name="cats[birth_date"]>
+  </label>
+
+  <label> Color
+    <select name = "cats[color]" default="">
+      <option selected disabled>Pick a Color</option>
+      <option value="blue">blue</option>
+      <option value="fuschia">fuschia</option>
+      <option value="yellow">yellow</option>
+      <option value="chartreus">chartreus</option>
+      <option value="red">red</option>
+      <option value="turqoise">turqoise</option>
+      <option value="puce">puce</option>
+    </select>
+  </label>
+
+  <label>Description
+    <textarea name="cats[description]" rows="10" cols="40" placeholder="Describe the Kitty"></textarea>
+  </label>
+</form>
