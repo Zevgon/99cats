@@ -1,20 +1,32 @@
-<table border="1">
-  <tr>
-    <th>
-      Name
-    </th>
-    <th>
-      Link
-    </th>
-  </tr>
-  <% @cats.each do |cat| %>
-    <tr>
-      <td>
-        <%= cat.name %>
-      </td>
-      <td>
-        <%= link_to "Cat Page",cat_path(cat)%>
-      </td>
-    </tr> 
-    <% end %>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>99 Cats</title>
+  </head>
+  <body>
+    <h1>Welcome to 99 Cats</h1>
+    <table border="1">
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Link
+        </th>
+      </tr>
+      <% @cats.each do |cat| %>
+        <tr>
+          <td>
+            <%= cat.name %>
+          </td>
+          <td>
+            <%= link_to "Cat Page",cat_path(cat)%>
+          </td>
+        </tr>
+        <% end %>
+    </table>
+    <h2>Make a New Cat</h2>
+    <%= link_to("New Cat",new_cat_url) %>
+  </body>
+</html>
