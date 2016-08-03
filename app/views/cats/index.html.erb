@@ -26,7 +26,10 @@
         </tr>
         <% end %>
     </table>
-    <h2>Make a New Cat</h2>
-    <%= link_to("New Cat",new_cat_url) %>
+    <ul>
+      <li> <%= link_to("Create a new cat",new_cat_url) %> </li>
+      <li> <%= link_to("Submit a cat rental request", new_cat_rental_request_url) %> </li>
+    </ul>
+
   </body>
 </html>

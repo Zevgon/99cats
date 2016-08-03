@@ -30,7 +30,11 @@
       <% end %>
     </table>
 
-    <h2>New Request</h2>
-    <%= link_to("Make New Request",new_cat_rental_request_url) %>
+    <ul>
+      <li> <%= link_to("Make New Request",new_cat_rental_request_url) %> </li>
+      <li> <%= link_to("Back to Main Page", cats_url) %> </li>
+      <li> <%= link_to("Edit Cat", "/cats/#{@cat.id}/edit") %> </li>
+    </ul>
+
   </body>
 </html>
